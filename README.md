@@ -60,3 +60,55 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## API:
+
+#### POST: http://localhost:3030/developers/
+
+#### GET: http://localhost:3030/developers/
+
+#### PUT: http://localhost:3030/developers/ID
+
+#### DELETE: http://localhost:3030/developers/ID
+
+
+## POST: http://localhost:3030/developers/
+
+
+###### Obrigatorio JSON exemplo:
+
+    { "nome": "Eduardo Conti", 
+      "sexo": "Masculino",
+      "idade": 25,
+      "hobby": "Desenvolver Aplicações",
+      "datanascimento": "1995-12-05" }
+
+###### API Retorna o ID
+    
+    { "id": "6016c644d55d790013f48407" }
+   
+
+## GET: http://localhost:3030/developers/
+
+
+###### Retorno:
+    {   "nome": "Eduardo",
+        "idade": 25,
+        "sexo": "M",
+        "hobby": "gazin",
+        "datanascimento": "1995-12-05T00:00:00.000Z",
+        "__v": 0,
+        "_id": "6016bfb9647aa60013cea3e2" }
+
+
+## PUT: http://localhost:3030/developers/ID
+
+###### Obrigatorio JSON exemplo:
+
+     { "nome": "Eduardo Conti", 
+      "sexo": "Masculino",
+      "idade": 25,
+      "hobby": "Desenvolver Aplicações",
+      "datanascimento": "1995-12-05" }
+
+
+## DELETE: http://localhost:3030/developers/ID
